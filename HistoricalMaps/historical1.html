@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIY Layout 1</title>
+    <style>
+      .ad img {
+        width: 1449px;
+      }
+      footer {
+        background: #000;
+        color: white;
+        text-align: center;
+        border-radius: 30px;
+        
+      }
+      /* header h1 {
+        background: grey;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        text-shadow: black;
+      } */
+      header h1 {
+        background: grey;
+        font-style: italic;
+        color: grey;
+        font-size: 40px;
+        margin-bottom: 0;
+        margin-top: 0;
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+        -webkit-text-stroke: 0.3vw brown;
+        text-transform: uppercase;
+        content: after(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 9%;
+        color: #01fe87;
+        -webkit-text-stroke: #1d256e;
+        border-right: 2px solid #01fe87;
+        overflow: hidden;
+        animation: animate 6s linear infinite;
+      }
+
+      @keyframes animate {
+        0% {
+          width: 0;
+        }
+        60%,
+        80% {
+          width: 100%;
+        }
+      }
+
+      header nav ul li {
+        display: inline-flex;
+        margin: 0px 60px 0px 157px;
+      }
+      header nav ul li a {
+        color: white;
+      }
+      header nav ul {
+        background: #ef0505d4;
+        margin-top: 81px;
+      }
+      .Search {
+        margin: 0px;
+        border-radius: 20px;
+        padding: 0px 40px 0px 40px;
+        background: pink;
+      }
+
+      .imgs img {
+        border-radius: 10px;
+        width: 481px;
+        object-fit: cover;
+        margin-right: 0px;
+        float: left;
+      }
+
+      /* h3 {
+        margin-left: 10px;
+        width: 88%;
+        z-index: 1;
+        height: auto;
+        overflow: hidden;
+        max-height: 74px;
+        margin-bottom: 0px;
+        font-size: 20px;
+        margin-top: 0;
+      } */
+
+      .imgs1 img {
+        border-radius: 10px;
+        width: 490px;
+        /* margin-top: 310px; */
+        object-fit: cover;
+        /* margin-left: 970px; */
+        float: right;
+      }
+
+      .imgs2 img {
+        border-radius: 10px;
+        width: 490px;
+        object-fit: cover;
+        /* margin-top: 28px; */
+        float: left;
+      }
+      .imgs3 img {
+        border-radius: 10px;
+        width: 360px;
+        object-fit: cover;
+      }
+      .imgs4 img {
+        border-radius: 10px;
+        width: 360px;
+        object-fit: cover;
+      }
+      .imgs5 img {
+        border-radius: 10px;
+        width: 360px;
+        object-fit: cover;
+      }
+      .categories img .cat1 {
+        width: 100px;
+        object-fit: cover;
+      }
+      big{
+        font-size: 20px;
+        color: red;
+        font-style: italic;
+        
+      }
+      h3{
+        color: chocolate;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      @media only screen and (max-width: 1400px) {
+       body {
+          background-color: rgb(11, 236, 49);
+         }
+            }
+            @media only screen and (max-width: 600px) {
+         body {
+        background-color: lightblue;
+           }
+            }
+            .paragraph
+      {
+        display:grid;
+        background: rgb(41, 35, 231);
+      }
+      .paragraph > div {
+  background-color: #89e289;
+  margin: 10px;
+  padding: 20px;
+  font-size: 15px;
+}
+
+          
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Historical Maps</h1>
+      
+      <nav>
+        <ul>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Email</a></li>
+          <li><a href="#">Account</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+    <main>
+      <div class="Search">
+        <label for="Search"
+          ><big>Historical Maps</big> <br /><small
+            ><sub>Find Your Region...</sub>
+          </small></label
+        >
+        <input
+          type="search"
+          value
+          name="search"
+          id="search"
+          placeholder="Search here and fulfill Your Need"
+        />
+      </div>
+
+      <div class="imgs">
+        <img src="images/img1.jpg" alt="Map is loading...wait for a second" />
+
+        <h2>&#9830; Ptolemaic Map (circa 150 AD):</h2>
+        <p>
+            Claudius Ptolemy, a Greco-Roman mathematician, astronomer, and geographer, created one of the most influential maps in history.
+            <br>
+            Ptolemy's world map was a representation of the world as known to the ancient Greeks and Romans, featuring Europe, Africa, and Asia.
+            <br>
+            It was based on a grid system of latitude and longitude, although inaccuracies in measurement and interpretation were prevalent.
+            <br>
+            Ptolemy's map remained influential in shaping European cartography for centuries.
+        </p>
+      </div>
+
+      <div class="imgs1">
+        <img src="images/img2.jpg" alt="Map is loading...wait for a second" />
+        
+        <p>
+           <big> The Mappa Mundi (circa 1300 AD):</big>
+            <br>
+            The Mappa Mundi is a medieval European map of the world, depicting a mix of geographical knowledge, religious symbolism, and mythological creatures.
+            Created on a circular format, it typically placed Jerusalem at the center and emphasized the religious significance of various locations.
+            The map represented the medieval European worldview, blending factual geography with religious beliefs and folklore. 
+            <br>
+            <big>The Waldseemüller Map (1507):</big>
+            <br>
+            This map is notable for being one of the first to use the name "America" to describe the New World.
+            Created by the German cartographer Martin Waldseemüller, it depicted the newly discovered continents of North and South America.
+            The map was based on exploratory voyages of the time, notably those of Amerigo Vespucci, after whom the continents were named.
+            It represented a significant advancement in European cartography and understanding of world geography.
+            <br>
+           <big>  The Cantino Planisphere (1502):</big>
+            <br>
+            This map is one of the earliest known maps to depict the discoveries of the Age of Exploration.
+            Named after Alberto Cantino, an Italian diplomat who smuggled it out of Portugal, the planisphere shows the coastlines of Africa, Europe, and the Americas.
+            It reflects the growing knowledge of European explorers about the geography of the world, particularly the coastlines of Africa and the Americas.
+            <br>
+             <big>The Mercator Projection Map (1569):</big>
+            <br>
+            Created by Flemish cartographer Gerardus Mercator, this map was revolutionary for navigation due to its ability to represent lines of constant course, known as rhumb lines, as straight segments.
+            However, it distorts the sizes of land masses, particularly near the poles, leading to criticism of its Eurocentric bias.
+            Despite its distortions, the Mercator projection became the standard for nautical navigation and world maps for centuries.
+        </p>
+      </div>
+      <div class="imgs2">
+        <img src="images/img3.jpeg" alt="Map is loading...wait for a second" />
+        <h2>&#9830; Ancient INDIA Places:</h2>
+        <p>
+            <big>Indus River Valley:</big>
+            <br>
+
+            The cradle of the Indus Valley Civilization, this region encompassed the fertile plains surrounding the Indus River and its tributaries in present-day Pakistan and northwest India.
+            Major cities of the Indus Valley Civilization, such as Harappa and Mohenjo-Daro, were located here.
+            <br>
+            <big>Gangetic Plains:</big>
+            
+            Extending from the foothills of the Himalayas to the Indian Ocean, the Gangetic Plains are among the most fertile regions in the world.
+            The plains are watered by the Ganges (Ganga) and its tributaries, including the Yamuna, Ghaghara, and Gandak rivers.
+            This region was the heartland of ancient Indian civilization and hosted numerous kingdoms and empires throughout history.
+            <br>
+            <big>Himalayas:</big>
+            
+            The Himalayan mountain range forms India's northern border and is home to some of the world's highest peaks, including Mount Everest.
+            Apart from its natural beauty and biodiversity, the Himalayas served as a formidable barrier protecting the Indian subcontinent from invasions from the north.
+            <br>
+            <big>Deccan Plateau:</big>
+            
+            Situated south of the Gangetic Plains, the Deccan Plateau is a vast elevated region covering much of central and southern India.
+            Characterized by its rugged terrain, the Deccan Plateau has historically been a center of cultural exchange and trade between northern and southern India.
+            <br>
+            <big>Western and Eastern Ghats:</big>
+            
+            These mountain ranges run along the western and eastern coasts of peninsular India, respectively.
+            The Western Ghats, known for their lush forests and biodiversity, separate the Deccan Plateau from the Arabian Sea.
+            The Eastern Ghats, though less prominent, play a crucial role in shaping the climate and geography of eastern India.
+            <br>
+            <big>Thar Desert:</big>
+            
+            Located in the northwest of India, the Thar Desert extends into Pakistan.
+            Despite its arid climate, the Thar Desert was inhabited by ancient civilizations and served as a trade route between the Indian subcontinent and Central Asia.
+            <br>
+            <big>Coastal Regions:</big>
+            
+            Ancient India had extensive coastal regions along the Arabian Sea to the west and the Bay of Bengal to the east.
+            These coastal areas were centers of maritime trade, attracting merchants from across the Indian Ocean region.
+            These geographic places sig
+        </p>
+      </div>
+      <!-- <br />
+      <hr /> -->
+      <!-- <big
+        ><i
+          ><u
+            ><b><p>Latest</p></b></u
+          ></i
+        ></big
+      > -->
+      <!-- <hr /> -->
+      <div class="imgs3">
+        <img src="images/img4.jpg" alt="A Windshield Washer." />
+        <img src="images/img5.png" alt="Proctective Gloves">
+        <img src="images/img6" alt="A gardening way" />
+        <img src="images/img7.jpeg" alt="Basement Garden." />
+        <div class="paragraph">
+          <div class="parag1">
+        <p>
+
+            
+           <big> Gujarat:</big>
+            
+            Located in western India, Gujarat is one of the country's largest and most prosperous states.
+            It has a rich historical and cultural heritage, being the birthplace of Mahatma Gandhi and a center of the ancient Indus Valley Civilization.
+            Gujarat is known for its vibrant culture, diverse landscapes, and significant industrial and economic development.
+            Major cities in Gujarat include Ahmedabad (the largest city and former capital), Surat, Vadodara, Rajkot, and Gandhinagar (the current capital).
+            The state has a long coastline along the Arabian Sea, making it an important center for maritime trade and commerce.
+            Gujarat is also renowned for its handicrafts, textiles, cuisine (including the famous Gujarati thali), and festivals such as Navratri and Uttarayan (kite festival).
+            Geographically, Gujarat is bordered by the states of Rajasthan to the north, Madhya Pradesh to the east, Maharashtra to the south, and the Arabian Sea to the west.</p>
+        </div>
+        <div class="parag2">
+          <p>
+          <big>  Geographical Features:</big>
+
+Ancient India had diverse geographical features, including the Himalayas in the north, the fertile plains of the Indus and Ganges rivers, the Deccan Plateau in the south, and coastal regions along the Arabian Sea and the Bay of Bengal.
+Maps of ancient India would illustrate these geographical features, along with major rivers like the Ganges, Yamuna, and Godavari.
+          </p>
+          </div>
+          <div class="parag3">            <p>
+            <big>  Indus Valley Civilization (circa 3300–1300 BCE): </big>
+
+The Indus Valley Civilization, also known as the Harappan Civilization, flourished in the northwest region of the Indian subcontinent, primarily in present-day Pakistan and northwest India.
+Major sites of the Indus Valley Civilization included Harappa, Mohenjo-Daro, and Dholavira.
+Maps of ancient India often include the extent of the Indus Valley Civilization, highlighting its urban centers, trade routes, and river systems.
+             .</p>
+            </div>
+
+            </div>
+      </div>
+      
+    </main>
+    <footer>
+      <input type="button" value=" < Previous" />
+      <input type="button" value="Next >" />
+    </footer>
+  </body>
+</html>

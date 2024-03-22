@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIY layout2</title>
+    <style>
+      body {
+        background: pink;
+      }
+      header h1 {
+        background: grey;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        font-size: 44px;
+      }
+      main h2 {
+        font-size: 30px;
+        color: blue;
+        padding-left: 20px;
+        border-radius: 30px;
+        background: #000;
+        margin-top: 0px;
+      }
+      .wishlist {
+        color: rgb(137, 9, 9);
+        background: pink;
+      }
+      .tuto {
+        margin-top: 70px;
+        margin-bottom: 80px;
+        font-size: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      .Tut0 a {
+        color: red;
+        margin-bottom: 30px;
+      }
+      .tut1 a {
+        color: blue;
+        line-height: 10px;
+      }
+      .tut2 a {
+        color: rgb(97, 5, 216);
+      }
+      footer {
+        background: #000;
+        text-align: center;
+        /* margin-top: 360px; */
+      }
+      @media only screen and (max-width: 1400px) {
+        body {
+          background-color: rgb(11, 236, 49);
+        }
+      }
+      @media only screen and (max-width: 600px) {
+        body {
+          background-color: lightblue;
+        }
+      }
+      .tuto {
+        display: grid;
+        /* margin-right: 800px;
+  margin-left: 10px; */
+      }
+      .tuto > div {
+        background-color: #89e289;
+        /* margin: 10px;
+  font-size: 15px; */
+        /* padding: 20px; */
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Historical Maps</h1>
+    </header>
+    <main>
+      <h2># My Account</h2>
+      <hr />
+      <div class="wishlist">
+        <p>for checking places in your country</p>
+        <label for="wishlist">Select Your Country</label>
+        <input type="text" name="wishlist" id="wishlist" />
+      </div>
+      <hr />
+      <div class="tuto">
+        <div class="Tut0">
+          <label for="Tut0">(1)</label>
+          <a href="historical1.html" target="_blank">Click For Home Page</a>
+        </div>
+        <br />
+        <br /><br />
+        <div class="tut1">
+          <label for="tut1">(2)</label>
+          <a href="historical2.html" target="_blank">Click For Worlds Ancient Places </a>
+        </div>
+        <br />
+        <br /><br />
+        <div class="tut2">
+          <label for="tut2">(3)</label>
+          <a href="aboutus.html" target="_blank">About this Website</a>
+        </div>
+        <br />
+        <br /><br />
+        
+      </div>
+      <hr />
+    </main>
+    <footer>
+      <input type="button" value=" < Previous" />
+      <input type="button" value="Next >" />
+    </footer>
+  </body>
+</html>
